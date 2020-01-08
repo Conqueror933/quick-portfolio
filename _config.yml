@@ -1,11 +1,11 @@
 title: Otto Müller # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
+logo: "/images/ARCHON GM!_skype.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   First description test
   <br><br>
   Second description testtest
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/rene-g-7064b5179/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-hacker
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
