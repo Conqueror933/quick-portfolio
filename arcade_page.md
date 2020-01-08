@@ -10,7 +10,7 @@ The original project that evolved into the Arcade.
 ## [Snake](/snake_page)
 It's the game Snake.
 ## Pong (under construction)
-Teaching a friend of mine who's studying at university how to c++.
+Teaching a friend of mine who's studying computer engineering at university how to c++.
 ## Memestone (under construction)
 A cardgame idea that should it ever get finished will be made in my Engine instead.
 ## Beenden
