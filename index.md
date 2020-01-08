@@ -10,16 +10,16 @@ My biggest completed project so far.<br/>
 
 ## [Quiz](/quiz_page)
 Simple quiz that reads it's questions and answers from a .txt<br/>
-Also supports counting of right and wrong answers and will prompt questions at weighted random, considering right/wrong ratios.
+Also supports counting of right and wrong answers and will prompt questions at weighted random, considering right/wrong ratios.<br/>
 <img src="quiz.png?raw=true"/><br/>
 
 ---
 
 ## [Engine](/engine_page)
-The project I am currently working on.
+The project I am currently working on.<br/>
 While it already reached a 'working' state big changes and refacturing leave it non-functioning at the moment,<br/>
 however here's a sneakpeak at some of the most interesting pieces.<br/>
-(code and explanation only)
+(code and explanation only)<br/>
 
 
 
