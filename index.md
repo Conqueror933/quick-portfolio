@@ -13,12 +13,12 @@
 
 <!------->
 <!--[Arcade](https://github.com/Conqueror933/Arcade)-->
-<img src="ArcadeMainMenu.PNG?raw=true"/>
-<img src="KäsekästchenMainMenu.png?raw=true"/>
-<img src="KäsekästchenOptionsMenu.png?raw=true"/>
-<img src="KäsekästchenGame.png?raw=true"/>
-<img src="SnakeMainMenu.png?raw=true"/>
-Button presses are animated<br/>
+<img src="ArcadeMainMenu.PNG?raw=true"/><br/>
+<img src="KäsekästchenMainMenu.png?raw=true"/><br/>
+<img src="KäsekästchenOptionsMenu.png?raw=true"/><br/>
+<img src="KäsekästchenGame.png?raw=true"/><br/>
+<img src="SnakeMainMenu.png?raw=true"/><br/>
+<br/>Button presses are animated<br/>
 <img src="SnakeOptionsMenu.png?raw=true"/>
 ---
 
