@@ -2,8 +2,8 @@
 ---
 This project once finished will include:
 * Plug&Play style modules for
- * Graphics
- * Sound
+    * Graphics
+        * Sound
  * Physics
  * AI
  * UserInput
