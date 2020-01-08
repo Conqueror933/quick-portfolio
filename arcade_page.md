@@ -19,11 +19,11 @@ An explanation on how the menu works.
 
 ### The thing connecting it all
 The entire project is based on the [Chili Framework](https://github.com/planetchili/chili_framework).<br/>
-The framework handles the Windows-API and provides the user with an easy to use interface to put pixels on the screen. 
-`gfx.PutPixel(x_coordinate, y_coordinate, red, green, blue);`
-It also provides a way to get mouse&keyboard input.
-`if(kbd.KeyIsPressed('A) || mouse.LeftIsPressed())`
-In addition to keeping the game running
+The framework handles the Windows-API and provides the user with an easy to use interface to put pixels on the screen.<br/>
+`gfx.PutPixel(x_coordinate, y_coordinate, red, green, blue);`<br/>
+It also provides a way to get mouse&keyboard input.<br/>
+`if(kbd.KeyIsPressed('A) || mouse.LeftIsPressed())`<br/>
+In addition to keeping the game running<br/>
 ```c++
 			Game theGame( wnd );
 			while( wnd.ProcessMessage() )
@@ -31,7 +31,7 @@ In addition to keeping the game running
 				theGame.Go();
 			}
 ```
-it handles errors and gives diagnostics.
+it handles errors and gives diagnostics.<br/>
 ```c++
 		catch( const ChiliException& e )
 		{
