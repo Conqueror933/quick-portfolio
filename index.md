@@ -13,7 +13,7 @@
 
 ---
 [Arcade](https://github.com/Conqueror933/Arcade)
-<img src="ArcadeMainMenu.png?raw=true"/>
+<img src="ArcadeMainMenu.PNG?raw=true"/>
 
 ---
 
