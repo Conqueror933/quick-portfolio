@@ -104,6 +104,8 @@ void Game::Go()
 `Go()` is the function that gets called by the mainloop every frame.<br/>
 It clears the Graphics buffer, does the ~~game~~ engine logic, draws the new frame and renders it.<br/>
 <br/>
-
-`UpdateModel()` calls the topmosts objects `.Update()` function and depending on the return value changes state.
+To explain `UpdateModel()` we have to take a step back and explain how the architecture works.<br/>
+In order to avoid having all the (potentially thousands) of games in memory at the same time and being able to go back to the previous screen, I use a stack on which the topmost object gets updated and once it finishes it gets popped off and the one below takes it's place. ~~The first object on the stack being the `IQuit` object, ending the program.~~<br/>
+Actually, while it indeed does work that way, none of that is required, in fact, it's useless altogether but as I said at the start, it is legacy code for me now and I won't change it.<br/>
+A simple pointer could replace the entire stack mechanic.
 
