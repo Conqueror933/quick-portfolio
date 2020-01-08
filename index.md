@@ -9,19 +9,14 @@
 
 ### [Quiz](/quiz_page)
 <img src="quiz.png?raw=true"/><br/>
-```c++
-do
-		{
-			temp = SafeInput::GetPath("Pfad setzen: ", 1);
-		} while (temp == "");
-```
 
 
 
 
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+<!--[Project 1 Title](/sample_page)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
 <!------->
 <!--[Project 2 Title](/pdf/sample_presentation.pdf)
