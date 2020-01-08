@@ -17,7 +17,7 @@ An explanation on how the menu works.
 
 ---
 
-### The thing connecting it all
+### The Base
 The entire project is based on the [Chili Framework](https://github.com/planetchili/chili_framework).<br/>
 The framework handles the Windows-API and provides the user with an easy to use interface to put pixels on the screen.<br/>
 `gfx.PutPixel(x_coordinate, y_coordinate, red, green, blue);`<br/>
@@ -40,3 +40,6 @@ it handles errors and gives diagnostics.<br/>
 			wnd.ShowMessageBox( e.GetExceptionType(),eMsg,MB_ICONERROR );
 		}
 ```
+
+### The thing connecting it all
+Hello World.
