@@ -2,20 +2,20 @@
 
 ---
 
-## [Arcade](/arcade_page)
+## [Arcade](/pages/arcade_page)
 My biggest completed project so far.<br/>
-<img src="ArcadeMainMenu.PNG?raw=true"/><br/>
+<img src="images/ArcadeMainMenu.PNG?raw=true"/><br/>
 
 ---
 
-## [Quiz](/quiz_page)
+## [Quiz](/pages/quiz_page)
 Simple quiz that reads it's questions and answers from a .txt<br/>
 Also supports counting of right and wrong answers and will prompt questions at weighted random, considering right/wrong ratios.<br/>
-<img src="quiz.png?raw=true"/><br/>
+<img src="images/quiz.png?raw=true"/><br/>
 
 ---
 
-## [Engine](/engine_page)
+## [Engine](/pages/engine_page)
 The project I am currently working on.<br/>
 While it already reached a 'working' state big changes and refacturing leave it non-functioning at the moment,<br/>
 however here's a sneakpeak at some of the most interesting pieces.<br/>
