@@ -24,6 +24,7 @@ This project once finished will include:
 * Simple easy to use "It just works" UserInterface with as few buttons as possible.
 * Advanced UserInterface in C++ for unlimited power.
 
+---
 
 ### The Vector class making infinite dimensions possible
 Showing only the template class and the specialisation for 5 dimensions, the entire thing is 1000+ lines of code
