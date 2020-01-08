@@ -101,5 +101,8 @@ void Game::Go()
 	gfx.EndFrame();
 }
 ```
-Go is the function that gets called by the mainloop every frame. It clears the Graphics buffer, does the ~~game~~ engine logic, draws the new frame and renders it.
+Go() is the function that gets called by the mainloop every frame.<br/>
+It clears the Graphics buffer, does the ~~game~~ engine logic, draws the new frame and renders it.<br/>
+<br/>
+
 
