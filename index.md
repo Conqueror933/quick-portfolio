@@ -18,7 +18,7 @@
 <img src="KäsekästchenOptionsMenu.png?raw=true"/>
 <img src="KäsekästchenGame.png?raw=true"/>
 <img src="SnakeMainMenu.png?raw=true"/>
-<img src="SnakeOptionsMenu.png?raw=true"/>
+[Button presses are animated]<img src="SnakeOptionsMenu.png?raw=true"/>
 ---
 
 ### Category Name 2
