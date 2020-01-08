@@ -105,9 +105,7 @@ void Game::Go()
 It clears the Graphics buffer, does the ~~game~~ engine logic, draws the new frame and renders it.<br/>
 <br/>
 To explain `UpdateModel()` we have to take a step back and explain how the architecture works.<br/>
-In order to avoid having all the (potentially thousands) of games in memory at the same time and being able to go back to the previous screen, I use a stack on which the topmost object gets updated and once it finishes it gets popped off and the one below takes it's place. ~~The first object on the stack being the `IQuit` object, ending the program.~~<br/>
-Actually, while it indeed does work that way, the dummy object isn't required.<br/>
-The reason that makes the stack worth over just a simple pointer is that it allows to avoid having to recreate the menu each time a game finishes.<br/>
+In order to avoid having all the (potentially thousands) of games in memory at the same time and being able to go back to the previous screen, I use a stack on which the topmost object gets updated and once it finishes it gets popped off and the one below takes it's place. ~~The first object on the stack being the `IQuit` object, ending the program.~~ Actually, while it indeed does work that way, the dummy object isn't required. The reason that makes the stack worth over just a simple pointer is that it allows to keep the menu in memory and quickly take over once the current game finishes.<br/>
 `UpdateModel()` calls the `Update()` function of the game/menu that is currently on the top of the stack.<br/>
 `ComposeFrame()` calls the `Draw()` function of the game/menu that is currently on the top of the stack.<br/>
 <br/>
