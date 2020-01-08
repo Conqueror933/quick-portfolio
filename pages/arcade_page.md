@@ -1,13 +1,13 @@
 # [Arcade](https://github.com/Conqueror933/Arcade)
 This project was created about 3 month after I started learning c++ through [internet resources](https://www.youtube.com/watch?v=PwuIEMUFUnQ&list=PLqCJpWy5FohcehaXlCIt8sVBHBFFRVWsx&index=1).<br/>
 I consider it legacy by now as there are a ton of bad design decisions in the code that I wouldn't repeat today. But until my Engine is finished it stays as my biggest __finished__ project.<br/>
-<img src="ArcadeMainMenu.PNG?raw=true"/><br/>
+<img src="images/ArcadeMainMenu.PNG?raw=true"/><br/>
 
 ## Willkommen zur Arcade
 Welcomes you in german.
-## [Kaesekaestchen](/kaesekaestchen_page)
+## [Kaesekaestchen](/pages/kaesekaestchen_page)
 The original project that evolved into the Arcade.
-## [Snake](/snake_page)
+## [Snake](/pages/snake_page)
 It's the game Snake.
 ## Pong (under construction)
 Teaching a friend of mine who's studying computer engineering at university how to c++.
@@ -17,7 +17,7 @@ A cardgame idea that should it ever get finished will be made in my Engine inste
 End button.
 ## DevMode
 Only exists in the debug-build, serves as a platform to test things.
-## [Menu](/menu_page)
+## [Menu](/pages/menu_page)
 Despite being in plain sight, a somewhat hidden part you often don't think about.<br/>
 <br/>
 ---
