@@ -4,7 +4,7 @@
 
 ## [Arcade](/pages/arcade_page)
 My biggest completed project so far.<br/>
-<img src="images/ArcadeMainMenu.PNG?raw=true"/><br/>
+<img src="images/ArcadeMainMenu.png?raw=true"/><br/>
 
 ---
 
