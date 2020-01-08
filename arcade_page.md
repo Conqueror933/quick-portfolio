@@ -19,9 +19,10 @@ End button.
 Only exists in the debug-build, serves as a platform to test things.
 ## [Menu](/menu_page)
 Despite being in plain sight, a somewhat hidden part you often don't think about.<br/>
-
+<br/>
 ---
-
+---
+<br/>
 ### The Base
 The entire project is based on the [Chili Framework](https://github.com/planetchili/chili_framework).<br/>
 The framework handles the Windows-API and provides the user with an easy to use interface to put pixels on the screen.<br/>
