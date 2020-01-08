@@ -4,12 +4,6 @@
 
 ### [Arcade](/arcade_page)
 <img src="ArcadeMainMenu.PNG?raw=true"/><br/>
-<img src="KäsekästchenMainMenu.png?raw=true"/><br/>
-<img src="KäsekästchenOptionsMenu.png?raw=true"/><br/>
-<img src="KäsekästchenGame.png?raw=true"/><br/>
-<img src="SnakeMainMenu.png?raw=true"/><br/>
-<br/>Button presses are animated<br/>
-<img src="SnakeOptionsMenu.png?raw=true"/><br/>
 
 ---
 
