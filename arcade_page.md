@@ -2,7 +2,9 @@
 <img src="ArcadeMainMenu.PNG?raw=true"/><br/>
 
 ## [Kaesekaestchen](/kaesekaestchen_page)
+The original project that evolved into the Arcade.
 ## [Snake](/snake_page)
+It's the game Snake.
 ## Pong (under construction)
 Teaching a friend of mine who's studying at university how to c++.
 ## Memestone (under construction)
