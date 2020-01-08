@@ -18,7 +18,7 @@
 <img src="KäsekästchenOptionsMenu.png?raw=true"/>
 <img src="KäsekästchenGame.png?raw=true"/>
 <img src="SnakeMainMenu.png?raw=true"/>
-Button presses are animated\
+Button presses are animated<br/>
 <img src="SnakeOptionsMenu.png?raw=true"/>
 ---
 
