@@ -27,6 +27,8 @@ This project once finished will include:
 
 ### The Vector class making infinite dimensions possible
 Showing only the template class and the specialisation for 5 dimensions, the entire thing is 1000+ lines of code
+Up to 5D we get nice x,y,z,w,v syntax while wasting 0 memory.
+For 6D+ we have to sacrifice the syntax and 6D will just be arr[0].
 ```c++
 template<typename T, size_t dimension> class Vector : Vector<T, 5>
 {
@@ -51,7 +53,8 @@ public:
 	}
 	~Vector<T, dimension>() = default;
 	//...
-}
+	std::array<T, dimension - 5> arr;
+};
 
 template<typename T> class Vector<T, 5> : public Vector<T, 4>
 {
