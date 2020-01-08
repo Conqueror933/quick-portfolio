@@ -87,9 +87,10 @@ private:
 	/********************************/
 };
 ```
-The name `Game` comes from the Chili Framework as this is the class that was intended for the game. It got outgrown by the project.<br/>
-A more appropriate name would probably be `Engine`.
-
+The name `Game` comes from the Chili Framework as this is the class that was intended for the game.<br/>
+It got outgrown by the project.<br/>
+A more appropriate name would probably be `Engine`.<br/>
+<br/>
 But let's start at the beginning.
 ```c++
 void Game::Go()
