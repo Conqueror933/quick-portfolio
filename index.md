@@ -1,8 +1,8 @@
-## Portfolio
+### Portfolio
 
 ---
 
-### [Arcade](https://github.com/Conqueror933/Arcade)
+## [Arcade](https://github.com/Conqueror933/Arcade)
 
 <!--[Project 1 Title](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/> -->
