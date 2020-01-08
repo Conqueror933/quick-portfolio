@@ -12,7 +12,7 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/> -->
 
 ---
-<--[Arcade](https://github.com/Conqueror933/Arcade)-->
+<!--[Arcade](https://github.com/Conqueror933/Arcade)-->
 <img src="ArcadeMainMenu.PNG?raw=true"/>
 
 ---
