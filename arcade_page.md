@@ -19,7 +19,6 @@ End button.
 Only exists in the debug-build, serves as a platform to test things.
 ## [Menu](/menu_page)
 Despite being in plain sight, a somewhat hidden part you often don't think about.<br/>
-An explanation on how the menu works.
 
 ---
 
