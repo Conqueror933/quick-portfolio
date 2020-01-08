@@ -9,7 +9,7 @@ It's the game Snake.
 Teaching a friend of mine who's studying at university how to c++.
 ## Memestone (under construction)
 A cardgame idea that should it ever get finished will be made in my Engine instead.
-## Menu
+## [Menu](/menu_page)
 Despite being in plain sight, a somewhat hidden part you often don't think about.<br/>
 An explanation on how the menu works.
 
