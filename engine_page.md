@@ -7,7 +7,7 @@ This project once finished will include:
     * Physics
     * AI
     * UserInput
-    * UserInterface
+    * UserInterface<br/>
  so you can test and play around with each component independent of the others.
 * Fully to-the-user-non-visible asynchronous multithreading
     * This includes using **all** cores of a CPU at 100% load if so desired.
