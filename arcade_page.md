@@ -42,4 +42,63 @@ it handles errors and gives diagnostics.<br/>
 ```
 
 ### The thing connecting it all
-Hello World.
+Game.h<br/>
+```c++
+#pragma once
+
+#include "Keyboard.h"
+#include "Mouse.h"
+#include "Graphics.h"
+#include "Menu.h"
+#include "Kaesekaestchen.h"
+#include "Snake.h"
+#include "Pong.h"
+#include "DevMode.h"
+#include "MemestoneHandler.h"
+
+class Game
+{
+	friend class Menu;
+public:
+	Game(class MainWindow& wnd);
+	Game(const Game&) = delete;
+	Game& operator=(const Game&) = delete;
+	~Game();
+	void Go();
+
+private:
+	void ComposeFrame();
+	void UpdateModel();
+	/********************************/
+	/*  User Functions              */
+	/********************************/
+private:
+	MainWindow & wnd;
+	Graphics gfx;
+	FrameTimer ft;
+	/********************************/
+	/*  User Variables              */
+	std::stack<std::unique_ptr<Interface>> spInterface;
+	class IQuit : public Interface
+	{
+	public:
+		int Update() { return 1; }
+	};
+	/********************************/
+};
+```
+The name `Game` comes from the Chili Framework as this is the class that was intended for the game. It got outgrown by the project.<br/>
+A more appropriate name would probably be `Engine`.
+
+But let's start at the beginning.
+```c++
+void Game::Go()
+{
+	gfx.BeginFrame();
+	UpdateModel();
+	ComposeFrame();
+	gfx.EndFrame();
+}
+```
+Go is the function that gets called by the mainloop every frame. It clears the Graphics buffer, does the ~~game~~ engine logic, draws the new frame and renders it.
+
