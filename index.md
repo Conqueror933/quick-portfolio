@@ -2,7 +2,7 @@
 
 ---
 
-### [Arcade](https://github.com/Conqueror933/Arcade)
+### [Arcade](/arcade_page)
 <img src="ArcadeMainMenu.PNG?raw=true"/><br/>
 <img src="KäsekästchenMainMenu.png?raw=true"/><br/>
 <img src="KäsekästchenOptionsMenu.png?raw=true"/><br/>
@@ -13,7 +13,7 @@
 
 ---
 
-### [Quiz](https://github.com/Conqueror933/Quiz)
+### [Quiz](/quiz_page)
 <img src="quiz.png?raw=true"/><br/>
 ```c++
 do
