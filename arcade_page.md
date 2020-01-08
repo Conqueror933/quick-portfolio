@@ -9,6 +9,9 @@ It's the game Snake.
 Teaching a friend of mine who's studying at university how to c++.
 ## Memestone (under construction)
 A cardgame idea that should it ever get finished will be made in my Engine instead.
+## Menu
+Despite being in plain sight, a somewhat hidden part you often don't think about.<br/>
+An explanation on how the menu works.
 
 ---
 This project was created about 3 month after I started learning c++ through [internet resources](https://www.youtube.com/watch?v=PwuIEMUFUnQ&list=PLqCJpWy5FohcehaXlCIt8sVBHBFFRVWsx&index=1).<br/>
