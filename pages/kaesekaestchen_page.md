@@ -71,7 +71,7 @@ Board::Board(Graphics& gfx, const BoardColors brdclr, const Vec2<int> cellcount,
 }
 ```
 <br/>
-Overloaded `Draw` function. `Draw(bool b)` exists for the green "last clicked" bar, which just gets drawn over what was there before.
+Overloaded `Draw` function. `Draw(bool b)` exists for the green "last clicked" bar, which just gets drawn over what was there before.<br/>
 ```c++
 void Board::Cell::Draw() const
 {
