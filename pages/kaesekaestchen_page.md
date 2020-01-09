@@ -28,10 +28,10 @@ Sets wether or not black bars on the edges or filling the whole screen is desire
 Makes the borders of the squares, the bars, bigger so they are easier to click on but sacrifices the aestethic look for it
 
 ### What a game could look like
-<img src="/images/Kaesekaestchen_start.png?raw=true"/><br/>
-<img src="/images/Kaesekaestchen_phase1.png?raw=true"/><br/>
-<img src="/images/Kaesekaestchen_phase2.png?raw=true"/><br/>
-<img src="/images/Kaesekaestchen_phase3.png?raw=true"/><br/>
-<img src="/images/Kaesekaestchen_phase4.png?raw=true"/><br/>
-<img src="/images/Kaesekaestchen_redwins.png?raw=true"/><br/>
+<img src="/images/kaesekaestchen_start.png?raw=true"/><br/>
+<img src="/images/kaesekaestchen_phase1.png?raw=true"/><br/>
+<img src="/images/kaesekaestchen_phase2.png?raw=true"/><br/>
+<img src="/images/kaesekaestchen_phase3.png?raw=true"/><br/>
+<img src="/images/kaesekaestchen_phase4.png?raw=true"/><br/>
+<img src="/images/kaesekaestchen_redwins.png?raw=true"/><br/>
 explanation of some sort.
