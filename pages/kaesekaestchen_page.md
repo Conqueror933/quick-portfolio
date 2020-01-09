@@ -107,3 +107,31 @@ void Board::Cell::Draw(bool b) const
 		brd.gfx.DrawRectangle(pos.x, pos.y, pos.x + brd.cellborderwidth, pos.y + brd.cellborderwidth + brd.cellsize.y, brd.brdclr.lastclicked);
 }
 ```
+AI.cpp<br/>
+The function to find a cell that has 3 sides set already, so the AI can claim it for itself<br/>
+```c++
+int AI::FindCellWith3()
+{
+	unsigned int index = 0;
+	for (; index < cellstate.size(); index++)
+		if (cellstate[index] == 3)
+			break;
+	if (index != cellstate.size())
+	{
+		int temp = 0;
+		if (cells[index].top)
+			if (cells[index].left)
+				if (!CheckRight(index)) //NOT LeftClick, its + not -
+					temp += cells[index + 1].Update(leftclick.x, leftclick.y, Player2); //set right
+				else
+					temp += cells[index + cellcount.x].Update(topclick.x, topclick.y, Player2); //set bottom
+			else
+				temp += LeftClick(index); //set left
+		else
+			temp += TopClick(index); //set top
+		return temp;
+	}
+	return -1;
+}
+```
+
