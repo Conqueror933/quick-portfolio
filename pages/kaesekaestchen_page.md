@@ -47,3 +47,9 @@ Red wins.<br/>
 <img src="/images/kaesekaestchen_redwins.png?raw=true"/><br/>
 <br/>
 One more click brings you back to the menu so you can play again!<br/>
+
+---
+## Technical Explanation
+For an explanation on how the menu works click [here](/pages/menu_page).<br/>
+<br/>
+`class`
