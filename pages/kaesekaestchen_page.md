@@ -30,14 +30,20 @@ Makes the borders of the squares, the bars, bigger so they are easier to click o
 ### What a game could look like
 The very start.<br/>
 <img src="/images/kaesekaestchen_start.png?raw=true"/><br/>
+<br/>
 After some more or less random setting.<br/>
 <img src="/images/kaesekaestchen_phase1.png?raw=true"/><br/>
+<br/>
 It appears red gave blue an opportunity to strike!<br/>
 <img src="/images/kaesekaestchen_phase2.png?raw=true"/><br/>
+<br/>
 Blue couldn't find a "free" spot anymore, so red gets to take ...a lot.<br/>
 <img src="/images/kaesekaestchen_phase3.png?raw=true"/><br/>
+<br/>
 Red had to give some back, will it be enough?<br/>
 <img src="/images/kaesekaestchen_phase4.png?raw=true"/><br/>
+<br/>
 Red wins.<br/>
 <img src="/images/kaesekaestchen_redwins.png?raw=true"/><br/>
-One more click brings you back to the menu.<br/>
+<br/>
+One more click brings you back to the menu so you can play again!<br/>
