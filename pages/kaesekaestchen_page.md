@@ -52,4 +52,57 @@ One more click brings you back to the menu so you can play again!<br/>
 ## Technical Explanation
 For an explanation on how the menu works click [here](/pages/menu_page).<br/>
 <br/>
-`class`
+### Highlights
+Board.cpp - the mother class for all Kaesekaestchen game modes.
+```c++
+Board::Board(Graphics& gfx, const BoardColors brdclr, const Vec2<int> cellcount, const double borderthicknessratio)
+	:
+	gfx(gfx),
+	brdclr(brdclr),
+	cellcount(cellcount),
+	cellborderwidth(CalculateCellBorderWidth1(cellcount, borderthicknessratio)),
+	cellsize(CalculateCellSize(cellcount, cellborderwidth)),
+	topleft(CalculateTopLeft(cellcount, cellsize, cellborderwidth)),
+	text(gfx, "Letters2.bmp"),
+	label(gfx, text, ".", Vec2<int>(700, 10), Vec2<int>(0, 0), 3, 6, Colors::Magenta)
+{
+	Init(*this);
+}
+```
+The constructor working out the sizes of various things that can be changed in the options menu.<br/>
+
+```c++
+void Board::Cell::Draw() const
+{
+	//decide on Color
+	Color c;
+	switch (playerflag)
+	{
+	case None:
+		c = brd.brdclr.foreground; break;
+	case Player1:
+		c = brd.brdclr.player1; break;
+	case Player2:
+		c = brd.brdclr.player2; break;
+	}
+	//Draw inner Cell
+	brd.gfx.DrawRectangleDim(pos.x + brd.cellborderwidth, pos.y + brd.cellborderwidth,
+		brd.cellsize.x - brd.cellborderwidth, brd.cellsize.y - brd.cellborderwidth, c);
+	//Draw Edges
+	if (top)
+		brd.gfx.DrawRectangle(pos.x, pos.y, pos.x + brd.cellborderwidth + brd.cellsize.x, pos.y + brd.cellborderwidth, brd.brdclr.clicked);
+	if (left)
+		brd.gfx.DrawRectangle(pos.x, pos.y, pos.x + brd.cellborderwidth, pos.y + brd.cellborderwidth + brd.cellsize.y, brd.brdclr.clicked);
+}
+
+void Board::Cell::Draw(bool b) const
+{
+	if(b)
+		//top
+		brd.gfx.DrawRectangle(pos.x, pos.y, pos.x + brd.cellborderwidth + brd.cellsize.x, pos.y + brd.cellborderwidth, brd.brdclr.lastclicked);
+	else
+		//left
+		brd.gfx.DrawRectangle(pos.x, pos.y, pos.x + brd.cellborderwidth, pos.y + brd.cellborderwidth + brd.cellsize.y, brd.brdclr.lastclicked);
+}
+```
+Overloaded `Draw` function. `Draw(bool b)` exists for the green "last clicked" bar, which just gets drawn over what was there before.
