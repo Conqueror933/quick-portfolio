@@ -53,7 +53,8 @@ One more click brings you back to the menu so you can play again!<br/>
 For an explanation on how the menu works click [here](/pages/menu_page).<br/>
 <br/>
 ### Highlights
-Board.cpp - the mother class for all Kaesekaestchen game modes.
+Board.cpp - the mother class for all Kaesekaestchen game modes.<br/>
+The constructor working out the sizes of various things that can be changed in the options menu.<br/>
 ```c++
 Board::Board(Graphics& gfx, const BoardColors brdclr, const Vec2<int> cellcount, const double borderthicknessratio)
 	:
@@ -69,8 +70,8 @@ Board::Board(Graphics& gfx, const BoardColors brdclr, const Vec2<int> cellcount,
 	Init(*this);
 }
 ```
-The constructor working out the sizes of various things that can be changed in the options menu.<br/>
-
+<br/>
+Overloaded `Draw` function. `Draw(bool b)` exists for the green "last clicked" bar, which just gets drawn over what was there before.
 ```c++
 void Board::Cell::Draw() const
 {
@@ -105,4 +106,3 @@ void Board::Cell::Draw(bool b) const
 		brd.gfx.DrawRectangle(pos.x, pos.y, pos.x + brd.cellborderwidth, pos.y + brd.cellborderwidth + brd.cellsize.y, brd.brdclr.lastclicked);
 }
 ```
-Overloaded `Draw` function. `Draw(bool b)` exists for the green "last clicked" bar, which just gets drawn over what was there before.
