@@ -4,7 +4,7 @@
 - everything std::
 	- included for completions sake
 - Unions
-	- ... example below
+	- and other types of low level memory management [example](#Union)
 - Pointer magic
 - Templates
 - Run & Compile -time polymorphism
@@ -54,9 +54,9 @@ In-depth: <- make it its own page/or a "spoiler" type deal
 - Drivers license
 - fluent english/german
 
-Union:
+#### <a name="Union"></a>
 ```c++
-	template<class Union>
+template<class Union>
 class StringSwitch
 {
 public:
