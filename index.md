@@ -19,8 +19,10 @@ Skillset Overview: ([In-depth and Soft-Skills](/pages/skillset_page)) <br/>
 - 2D & 3D Graphics (programming)
 - Physics
 - AI
-- Logistics <br/>
+- Logistics
+- Pathfinding
 
+<br/>
 ...and the projects to prove it:
 
 ---
