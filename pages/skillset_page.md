@@ -4,45 +4,7 @@
 - everything std::
 	- included for completions sake
 - Unions
-	- ```c++
-	template<class Union>
-class StringSwitch
-{
-public:
-	void AddEntry(std::string s, Union u)
-	{
-		assert(map.find(s) == map.end());
-		map.emplace(s, u);
-	}
-	void ChangeEntry(std::string s, Union u)
-	{
-		assert(!(map.find(s) == map.end()));
-		map.insert_or_assign(s, u);
-	}
-	Union GetValue(std::string s)
-	{
-		assert(!(map.find(s) == map.end()));
-		return map.at(s);
-	}
-	void Flush()
-	{
-		map.clear();
-	}
-
-private:
-	std::unordered_map<std::string, Union> map;
-};
-
-union DataPass
-{
-	DataPass(char c) : c(c) {}
-	DataPass(int i) : i(i) {}
-	DataPass(double d) : d(d) {}
-	int i;
-	char c;
-	double d;
-};
-```
+	- ... example below
 - Pointer magic
 - Templates
 - Run & Compile -time polymorphism
@@ -91,3 +53,44 @@ In-depth: <- make it its own page/or a "spoiler" type deal
 - Phenomenal analyzing skills
 - Drivers license
 - fluent english/german
+
+Union:
+```c++
+	template<class Union>
+class StringSwitch
+{
+public:
+	void AddEntry(std::string s, Union u)
+	{
+		assert(map.find(s) == map.end());
+		map.emplace(s, u);
+	}
+	void ChangeEntry(std::string s, Union u)
+	{
+		assert(!(map.find(s) == map.end()));
+		map.insert_or_assign(s, u);
+	}
+	Union GetValue(std::string s)
+	{
+		assert(!(map.find(s) == map.end()));
+		return map.at(s);
+	}
+	void Flush()
+	{
+		map.clear();
+	}
+
+private:
+	std::unordered_map<std::string, Union> map;
+};
+
+union DataPass
+{
+	DataPass(char c) : c(c) {}
+	DataPass(int i) : i(i) {}
+	DataPass(double d) : d(d) {}
+	int i;
+	char c;
+	double d;
+};
+```
