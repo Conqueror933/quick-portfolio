@@ -93,8 +93,9 @@ union DataPass
 ```
 
 #### <a name="Pointer"></a> Pointer
-`AddObjects()` function of the `World` in my [Engine](/pages/engine_page) project that takes in unique_ptr's of Objects to add them to the tripple buffering for the asynchronous multithreading. I found a better way of doing this later, but I still think if shows the 'Pointer magic' pretty well.
-´´´c++
+`AddObjects()` function of the `World` in my [Engine](/pages/engine_page) project that takes in unique_ptr's of Objects to add them to the tripple buffering for the asynchronous multithreading. I found a better way of doing this later, but I still think if shows the 'Pointer magic' pretty well.<br/>
+
+```c++
 void WorldstateHandler::AddObjects()
 {
 	while (!ToAdd.empty())
@@ -110,4 +111,4 @@ void WorldstateHandler::AddObjects()
 		ToAdd.pop_back();
 	}
 }
-´´´
+```
