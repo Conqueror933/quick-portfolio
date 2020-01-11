@@ -47,7 +47,7 @@
 - Goal-oriented way of working
 - Always calm and collected
 - Extremly fast and thorough learner
-- Phenomenal analyzing skills
+- [Phenomenal](https://www.youtube.com/watch?v=rZXvEcBKMT8) analyzing skills
 - fluent english/german
 - Drivers license
 
