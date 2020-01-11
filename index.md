@@ -1,9 +1,6 @@
 # Portfolio
 
-!> ```javascript
-!> alert("42");
-!> ```
-Skillset:
+Skillset [In-depth and Soft-Skills](/pages/skillset_page):
 Overview:
 - Syntax + Basics of C++ 00/11/14/17/20
 - everything std::
@@ -23,37 +20,9 @@ Overview:
 - 2D & 3D Graphics (programming)
 - Physics
 - AI
-- Logistics (factorio)
-
-In-depth: <- make it its own page/or a "spoiler" type deal
-- Syntax + Basics of C++ - only included for completions sake
-- everything std:: - STL and Standard library, containers, algorithms, etc.
-- Unions - and other types of low level memory management
-- Pointer magic - Pointer arithmetics, Ownership-management with pointers
-- Templates - from using them to making them, see here(link engine vector) for an example
-- Run & Compile -time polymorphism - everything from dynamic dispatch, virtual function tables to template meta programming
-- Design Patterns - from Singleton and Update Patterns to Data locality and XXX
-- Data Structures - everything about O(n) and when to ignore it
-- Algorithms - yes
-- Debugging - search and fix
-- Template Debugging - able to read and understand page-long template error messages
-- Tests - from unit tests to finding performance bottlenecks, never assume anything, test it, try it, break it, fix it.
-- Synchronous & Asynchronous program-flow - all things multithreading, advantages, disadvantages and most of all pitfalls
-- Networking - while not used in practice yet, I have theoretical knowledge and know some pitfalls
-- User Interface - the Do's and Dont's of what makes and breaks a UI
+- Logistics
 
 ...and the projects to prove it:
-
-Soft-Skills:
-- Leadership ability
-- Teamplayer & Lone wolf alike
-	- I can work in and with a team, assign roles or just fulfill mine, but I can also do whatever is needed on my own
-- Goal-oriented way of working
-- Always calm and collected
-- Extremly fast and thorough learner
-- Phenomenal analyzing skills
-- Drivers license
-- fluent english/german
 
 ---
 
