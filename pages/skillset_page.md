@@ -6,42 +6,39 @@
 - Unions
 	- and other types of low level memory management [example](#Union)
 - Pointer magic
+	- Pointer arithmetics, Ownership-management with pointers [example](#Pointer)
 - Templates
+	- from using them to making them [example](/pages/engine_page)
 - Run & Compile -time polymorphism
+	- everything from dynamic dispatch, virtual function tables to template meta programming
 - Design Patterns
+	- from Singleton and Update Patterns to Data locality and Object Pools
 - Data Structures
+	- everything about O(n) and when to ignore it
 - Algorithms
+	- yes
 - Debugging
+	- search and fix
 - Template Debugging
+	- able to read and understand page-long template error messages
 - Tests & Performance
+	- from unit tests to finding performance bottlenecks, never assume anything, test it, try it, break it, fix it.
 - Synchronous & Asynchronous program-flow
+	- all things multithreading, advantages, disadvantages and most of all pitfalls
 - Networking
+	- while not used in practice yet, I have theoretical knowledge and know some pitfalls
 - User Interface Design
+	- the Do's and Dont's of what makes and breaks a UI
 - 2D & 3D Graphics (programming)
+	- Vector and Matrix math, Backface-culling, Transformations, ...
 - Physics
+	- Rebound angles, drag, impact-force, ...
 - AI
+	- State-Manager, Decision making
 - Logistics
+	- 600+ hours in [factorio](https://factorio.com/) which essentially is a logistics and automation simulator
 - Pathfinding
-
-
-In-depth: <- make it its own page/or a "spoiler" type deal
-- Syntax + Basics of C++ - only included for completions sake
-- everything std:: - STL and Standard library, containers, algorithms, etc.
-- Unions - and other types of low level memory management
-- Pointer magic - Pointer arithmetics, Ownership-management with pointers
-- Templates - from using them to making them, see here(link engine vector) for an example
-- Run & Compile -time polymorphism - everything from dynamic dispatch, virtual function tables to template meta programming
-- Design Patterns - from Singleton and Update Patterns to Data locality and XXX
-- Data Structures - everything about O(n) and when to ignore it
-- Algorithms - yes
-- Debugging - search and fix
-- Template Debugging - able to read and understand page-long template error messages
-- Tests - from unit tests to finding performance bottlenecks, never assume anything, test it, try it, break it, fix it.
-- Synchronous & Asynchronous program-flow - all things multithreading, advantages, disadvantages and most of all pitfalls
-- Networking - while not used in practice yet, I have theoretical knowledge and know some pitfalls
-- User Interface - the Do's and Dont's of what makes and breaks a UI
-
-...and the projects to prove it:
+	- A-Star, Grid based and the unrealthing
 
 ### Soft-Skills:
 - Leadership ability
@@ -51,8 +48,8 @@ In-depth: <- make it its own page/or a "spoiler" type deal
 - Always calm and collected
 - Extremly fast and thorough learner
 - Phenomenal analyzing skills
-- Drivers license
 - fluent english/german
+- Drivers license
 
 #### <a name="Union"></a> Union
 ```c++
