@@ -1,7 +1,6 @@
 # Portfolio
 
-Skillset [In-depth and Soft-Skills](/pages/skillset_page):<br/>
-Overview:
+Skillset:
 - Syntax + Basics of C++ 00/11/14/17/20
 - everything std::
 - Unions
@@ -21,7 +20,7 @@ Overview:
 - Physics
 - AI
 - Logistics
-
+ [In-depth and Soft-Skills](/pages/skillset_page)<br/>
 ...and the projects to prove it:
 
 ---
