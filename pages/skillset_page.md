@@ -12,7 +12,7 @@
 - Run & Compile -time polymorphism
 	- everything from dynamic dispatch, virtual function tables to template meta programming
 - Design Patterns
-	- from Singleton and Update Patterns to Data locality and Object Pools
+	- from Singleton and Update Patterns to Data locality and Object Pools [example](/pages/arcade_page)
 - Data Structures
 	- everything about O(n) and when to ignore it
 - Algorithms
