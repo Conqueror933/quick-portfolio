@@ -22,7 +22,7 @@
 - Template Debugging
 	- able to read and understand page-long template error messages
 - Tests & Performance
-	- from unit tests to finding performance bottlenecks, never assume anything, test it, try it, break it, fix it.
+	- from unit tests to finding performance bottlenecks, never assume anything, test it, try it, break it.
 - Synchronous & Asynchronous program-flow
 	- all things multithreading, advantages, disadvantages and most of all pitfalls
 - Networking
