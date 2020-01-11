@@ -54,7 +54,7 @@ In-depth: <- make it its own page/or a "spoiler" type deal
 - Drivers license
 - fluent english/german
 
-#### <a name="Union"></a>
+#### <a name="Union"></a> Union
 ```c++
 template<class Union>
 class StringSwitch
