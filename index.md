@@ -1,6 +1,6 @@
 # Portfolio
 
-Skillset [In-depth and Soft-Skills](/pages/skillset_page):
+Skillset [In-depth and Soft-Skills](/pages/skillset_page):<br/>
 Overview:
 - Syntax + Basics of C++ 00/11/14/17/20
 - everything std::
