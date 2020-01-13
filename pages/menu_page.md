@@ -31,6 +31,7 @@ Familiar buttons from the main menu.<br/>
 The menu is structured like the `Game`, having a stack to push and pop the menus on top of and calling the `Update()` and `Draw()` functions of the topmost element.<br/>
 That's why every menuscreen is its own internal class, essentially functors. Each building the menu in their constructor, pushing the buttons and labels in their respective vectors.<br/>
 Here is one of such:<br/>
+
 ```c++
 MenuHandler::KaeseMenu::KaeseMenu(MenuHandler& menuHandler) : Menu(menuHandler)
 {
@@ -62,5 +63,6 @@ MenuHandler::KaeseMenu::KaeseMenu(MenuHandler& menuHandler) : Menu(menuHandler)
 	mH.data.AddEntry("Border", 0.25);
 }
 ```
+
 <br/>
 This is also adding entries to the `data` part for use in the respective game later on.
