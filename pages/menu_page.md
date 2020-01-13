@@ -75,8 +75,10 @@ union DataPass
 	double d;
 };
 ```
+
 ## Letters
-How I got the letters on the screen. `Text text;` is where the magic is hidden. Let's have a look.
+How I got the letters on the screen. `Text text;` is where the magic is hidden. Let's have a look.<br/>
+
 ```c++
 #include "Bitmap.h"
 
@@ -249,6 +251,7 @@ void Text::Draw(const char* str, Vec2<int> position, int letterspace, Color c)
 	}
 }
 ```
+
 <br/>
 Here we have the rather simple `Bitmap` class that reads from file, handles the bitmap file format and stores the colours in a vector formated how the `Graphics` expects it. Then as a derived class `Text` maps the letters in the bitmap according to their offset from 0. For ease of use `Text` just constructs with a `std::string` and handles the rest internally.
 
