@@ -62,4 +62,5 @@ MenuHandler::KaeseMenu::KaeseMenu(MenuHandler& menuHandler) : Menu(menuHandler)
 	mH.data.AddEntry("Border", 0.25);
 }
 ```
+<br/>
 This is also adding entries to the `data` part for use in the respective game later on.
