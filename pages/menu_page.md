@@ -64,6 +64,7 @@ MenuHandler::KaeseMenu::KaeseMenu(MenuHandler& menuHandler) : Menu(menuHandler)
 
 <br/>
 This is also adding entries to the `StringSwitch<DataPass>& GetData() { return data; }` part for use in the respective game later on. The use of the string to identify, while needing more memory than an int/enum in most cases, gives a lot more flexibility. The actual data part being able to take in whatever type is needed is achieved by using a Union<br/>
+
 ```c++
 union DataPass
 {
