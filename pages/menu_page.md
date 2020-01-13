@@ -48,9 +48,6 @@ MenuHandler::KaeseMenu::KaeseMenu(MenuHandler& menuHandler) : Menu(menuHandler)
 	//AI Level 2
 	vpButtons.emplace_back(std::make_unique<Button>(
 		mH.text, mH.gfx, Vec2<int>{ 325, 320 }, Vec2<int>{ 150, 50 }, "Mittel", 4, letterspacing, border, half_bordersize, Colors::White, Colors::Black));
-	//AI Level 3
-	/*vpButtons.emplace_back(std::make_unique<Button>(
-		mH.text, mH.gfx, Vec2<int>{ 325, 380 }, Vec2<int>{ 150, 50 }, "Schwer", 5, letterspacing, border, half_bordersize, Colors::White, Colors::Black));*/
 	//Optionen
 	vpButtons.emplace_back(std::make_unique<Button>(
 		mH.text, mH.gfx, Vec2<int>{ 325, 460 }, Vec2<int>{ 150, 50 }, "Optionen", 6, letterspacing, border, half_bordersize, Colors::White, Colors::Black));
