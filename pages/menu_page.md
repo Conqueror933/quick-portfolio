@@ -27,8 +27,9 @@ MenuHandler::MainMenu::MainMenu(MenuHandler& menuHandler) : Menu(menuHandler)
 ```
 <br/>
 Familiar buttons from the main menu.<br/>
-<br/>
-The menu is structured like the `Game` , having a stack to push and pop the menus on top of and calling the `Update()` and `Draw()` functions of the topmost element.<br/>
+
+## Structure
+The menu is structured like the `Game`, having a stack to push and pop the menus on top of and calling the `Update()` and `Draw()` functions of the topmost element.<br/>
 That's why every menuscreen is its own internal class, essentially functors. Each building the menu in their constructor, pushing the buttons and labels in their respective vectors.<br/>
 Here is one of such:<br/>
 
