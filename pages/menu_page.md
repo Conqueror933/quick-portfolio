@@ -301,7 +301,7 @@ Button drawing
 ```c++
 	void Draw()
 	{
-		Color Edge1 = backgroundcolor; Edge1.Shade(0.25f);
+		//Color Edge1 = backgroundcolor; Edge1.Shade(0.25f);
 		Color Edge2 = backgroundcolor; Edge2.Shade(0.5f);
 		Color Background = backgroundcolor;
 
