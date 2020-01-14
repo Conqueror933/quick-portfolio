@@ -47,7 +47,8 @@ however here's a sneakpeak at some of the most interesting pieces.<br/>
 (code and explanation only)<br/>
 
 ## [Unreal Engine 4](/pages/unreal_page)
-Start of an RTS game with 2 (or more) Clients and a Server. The green/red spheres are debug indicator for the range of the units. The little 'hut's top left and bottom right are structures to spawn units from, own faction only. Units can fight and kill each other.
+Start of an RTS game with 2 (or more) Clients and a Server. The green/red spheres are debug indicator for the range of the units. The little 'hut's top left and bottom right are structures to spawn units from, own faction only. Units can fight and kill each other.<br/>
+Project done in unreal c++, unreal wasn't designed to be used with c++...
 <img src="images/unreal.png?raw=true"/><br/>
 
 
