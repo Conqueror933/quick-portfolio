@@ -258,3 +258,66 @@ Here we have the rather simple `Bitmap` class that reads from file, handles the 
 
 ## Labels & Buttons
 
+Label drawing
+
+```c++
+void Label::Draw()
+{
+	//check if label background is desired
+	if (background != Colors::Magenta)
+		gfx.DrawRectangleDim(position.x, position.y, size.x, size.y, background);
+
+	//get the width & height of the text
+	const char* str = s.c_str();
+	int width = 0;
+	for (auto i = 0; str[i] != 0; i++)
+	{
+		width += text.GetLetterWidth(str[i]);
+		width += letterspacing;
+	}
+	width -= letterspacing; //remove spacing past the last
+	int height = text.GetLetterHeight();
+
+	//if default settings are enabled, make default background
+	if (size == Vec2<int>{0, 0})
+	{
+		size.x = width + border;
+		size.y = height + border;
+	}
+
+	//if text fits in background draw text
+	if (width < size.x && height < size.y)
+	{
+		auto x = size.x - width;
+		auto y = size.y - height;
+		Vec2<int> vec = { position.x + x / 2, position.y + y / 2 };
+		text.Draw(s, vec, letterspacing, textcolor);
+	}
+}
+```
+
+Button drawing
+
+```c++
+	void Draw()
+	{
+		Color Edge1 = backgroundcolor; Edge1.Shade(0.25f);
+		Color Edge2 = backgroundcolor; Edge2.Shade(0.5f);
+		Color Background = backgroundcolor;
+
+		if (highlighted)
+		{
+			//Edge1.Shade(0.5f);
+			Edge2.Shade(0.25f);
+			Background.Shade(0.75f);
+		}
+
+		gfx.DrawRectangleDim(position.x, position.y, size.x, size.y, Edge1);
+		gfx.DrawRectangleDim(position.x + half_bordersize, position.y + half_bordersize,
+			size.x - half_bordersize * 2, size.y - half_bordersize * 2, Edge2);
+		gfx.DrawRectangleDim(position.x + half_bordersize * 2, position.y + half_bordersize * 2,
+			size.x - half_bordersize * 4, size.y - half_bordersize * 4, Background);
+		label.Draw();
+	}
+	```
+
