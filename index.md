@@ -1,8 +1,8 @@
 # Portfolio
 
 Skillset Overview: ([In-depth and Soft-Skills](/pages/skillset_page)) <br/>
-- Syntax + Basics of C++ 00/11/14/17/20
-- everything std::
+- Syntax + Basics of C++
+- everything std:: 00/11/14/17/20
 - Unions
 - Pointer magic
 - Templates
