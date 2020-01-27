@@ -6,8 +6,8 @@ description: > # your text below (remove <br> elements if you don't need line br
   Never assume, try it, test it, break it.
   <br><br>
   <a href="https://conqueror933.github.io/">Home</a>
-  <br><br>
-  <a href="https://www.linkedin.com/in/rene-g-7064b5179/">View My LinkedIn Profile</a> 
+  # <br><br>
+  # <a href="https://www.linkedin.com/in/rene-g-7064b5179/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-hacker
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
