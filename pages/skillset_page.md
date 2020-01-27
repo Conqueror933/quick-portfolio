@@ -1,7 +1,7 @@
 ### In-depth:
-- Syntax + Basics of C++ 00/11/14/17/20
+- Syntax + Basics of C++
 	- included for completions sake
-- everything std::
+- everything std:: 00/11/14/17/20
 	- included for completions sake
 - Unions
 	- and other types of low level memory management [example](#Union)
