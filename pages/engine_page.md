@@ -50,7 +50,10 @@ public:
 	}
 	Vector<T, dimension>& operator=(const Vector<T, dimension>& rhs)
 	{
-		return *this = Vector<T, dimension>(rhs);
+		for(size_t i = 0; i < arr.size(); i++)
+			arr[i] = rhs.arr[i];
+		Vector<T, 5>::operator=(rhs);
+		return *this;
 	}
 	~Vector<T, dimension>() = default;
 	//...
@@ -69,7 +72,9 @@ public:
 	Vector<T, 5>(const Vector<T, 5>& rhs) : Vector<T, 4>(rhs), v(rhs.v) {}
 	Vector<T, 5>& operator=(const Vector<T, 5>& rhs)
 	{
-		return *this = Vector<T, 5>(rhs);
+		v = rhs.v;
+		Vector<T, 4>::operator=(rhs);
+		return *this;
 	}
 	~Vector<T, 5>() = default;
 
