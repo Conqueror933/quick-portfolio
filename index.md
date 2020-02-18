@@ -36,7 +36,7 @@ My biggest completed project so far.<br/>
 <!--## [Quiz](/pages/quiz_page)-->
 ## Quiz
 Simple quiz that reads it's questions and answers from a .txt<br/>
-Also supports counting of right and wrong answers and will prompt questions at weighted random, considering right/wrong ratios.<br/>
+Also supports counting of right and wrong answers and will prompt questions at weighted random, considering right/wrong ratios. [Sourcecode](https://github.com/Conqueror933/Quiz)<br/>
 <img src="images/quiz.png?raw=true"/><br/>
 
 ---
