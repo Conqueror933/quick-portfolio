@@ -33,7 +33,8 @@ My biggest completed project so far.<br/>
 
 ---
 
-## [Quiz]<!--(/pages/quiz_page)-->
+<!--## [Quiz](/pages/quiz_page)-->
+## Quiz
 Simple quiz that reads it's questions and answers from a .txt<br/>
 Also supports counting of right and wrong answers and will prompt questions at weighted random, considering right/wrong ratios.<br/>
 <img src="images/quiz.png?raw=true"/><br/>
@@ -46,7 +47,8 @@ While it already reached a 'working' state big changes and refacturing leave it 
 however here's a sneakpeak at some of the most interesting pieces.<br/>
 (code and explanation only)<br/>
 
-## [Unreal Engine 4]<!--(/pages/unreal_page)-->
+<!--## [Unreal Engine 4](/pages/unreal_page)-->
+## Unreal Engine 4
 Start of an RTS game with 2 (or more) Clients and a Server. The green/red spheres are debug indicator for the range of the units. The little 'hut's top left and bottom right are structures to spawn units from, own faction only. Units can fight and kill each other.<br/>
 Project done in unreal c++, unreal wasn't designed to be used with c++...<br/>
 Left picture bottom is cut off. Red and black squares at the bottom left are placeholders for future UI.
