@@ -1,7 +1,8 @@
 # Engine
 ---
 Our little triangle "naked".<br/>
-```	Model<float, 2> model;
+```c++
+	Model<float, 2> model;
 	model.points.emplace_back(150.5f, 200.5f);
 	model.points.emplace_back(250.3f, 250.6f);
 	model.points.emplace_back(200.4f, 150.8f);
