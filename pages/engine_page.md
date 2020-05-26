@@ -214,5 +214,5 @@ void GetShaTransforms(std::vector<Transformation<T, dimension>>& out) const
 	memcpy(out.data(), tra.data(), tra.size() * sizeof(Transformation<T,dimension>));
 }
 ```
-before every frame, instead of copying over the entire object.
+before every frame, instead of copying over the entire object.<br/>
 ---
