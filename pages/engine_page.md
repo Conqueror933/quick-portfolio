@@ -215,3 +215,4 @@ void GetShaTransforms(std::vector<Transformation<T, dimension>>& out) const
 }
 ```
 before every frame, instead of copying over the entire object.
+---
