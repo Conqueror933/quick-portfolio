@@ -177,30 +177,30 @@ While the core engine always stays the same, different (e.g. Graphic) modules ca
 WindowsSetUp.h's Init function
 ```c++
 bool Init() override
+{
+	if (!Engine<T, dimension>::IsInitialized())
 	{
-		if (!Engine<T, dimension>::IsInitialized())
-		{
-			//todo Switch to smart pointers later
-			EngineSetUp<T, dimension> ESU;
-			ESU.Graphics = new WindowsGraphics(hWnd);
-			ESU.AI = new AI<T, dimension>();
-			ESU.Physics = new Physics<T, dimension>();
-			ESU.Sound = new WindowsSound<T, dimension>();
-			ESU.UserInput = new WindowsUserInput<T, dimension>(hWnd);
-			ESU.UserInterface = new UserInterface<T, dimension>();
+		//todo Switch to smart pointers later
+		EngineSetUp<T, dimension> ESU;
+		ESU.Graphics = new WindowsGraphics(hWnd);
+		ESU.AI = new AI<T, dimension>();
+		ESU.Physics = new Physics<T, dimension>();
+		ESU.Sound = new WindowsSound<T, dimension>();
+		ESU.UserInput = new WindowsUserInput<T, dimension>(hWnd);
+		ESU.UserInterface = new UserInterface<T, dimension>();
 
-			//Engine either initialises correctly or we clean up the mess we made
-			if (Engine<T, dimension>::Init(ESU)) { return true; }
-			else {
-				delete ESU.Graphics;
-				delete ESU.AI;
-				delete ESU.Physics;
-				delete ESU.Sound;
-				delete ESU.UserInput;
-				delete ESU.UserInterface;
-			}
+		//Engine either initialises correctly or we clean up the mess we made
+		if (Engine<T, dimension>::Init(ESU)) { return true; }
+		else {
+			delete ESU.Graphics;
+			delete ESU.AI;
+			delete ESU.Physics;
+			delete ESU.Sound;
+			delete ESU.UserInput;
+			delete ESU.UserInterface;
 		}
-		return false;
 	}
+	return false;
+}
 ```
 	
