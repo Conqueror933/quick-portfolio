@@ -1,5 +1,28 @@
 # Engine
 ---
+Our little triangle "naked".<br/>
+```	Model<float, 2> model;
+	model.points.emplace_back(150.5f, 200.5f);
+	model.points.emplace_back(250.3f, 250.6f);
+	model.points.emplace_back(200.4f, 150.8f);
+	Model<float, 2>::Triangle tri;
+	tri.a = 0;
+	tri.b = 1;
+	tri.c = 2;
+	model.indicies.emplace_back(tri);
+
+	MoH.AddModel("triangle", model);
+
+	ObjectToAdd<float, 2> obj;
+	obj.transformation.loc = { 0.5f, 0.5f};
+	obj.transformation.rot = { 1.f, 1.f };
+	obj.transformation.sca = { 1.f, 1.f};
+	obj.direction.vel = { 0.01f, -0.02f };
+	obj.model_name = "triangle";
+	obj.material_name = "red";
+	AddObject(obj);
+```	
+---
 This project once finished will include:
 * Plug&Play style modules for
     * Graphics
