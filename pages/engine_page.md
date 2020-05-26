@@ -155,7 +155,7 @@ public:
 };
 ```
 ---
-Main.cpp easily allows to change dimensioncount (2 in this case) and unit-model (float in this case) for predefined set-ups. It also makes changing the platform to build for easy, with preprocessor macros.
+`Main.cpp` easily allows to change dimensioncount (`2` in this case) and unit-model (`float` in this case) for predefined set-ups. It also makes changing the platform to build for easy, with preprocessor macros.
 ```c++
 #ifdef _WIN32
 int WINAPI wWinMain(HINSTANCE hInst, HINSTANCE, LPWSTR pArgs, INT)
