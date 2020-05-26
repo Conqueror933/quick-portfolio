@@ -47,6 +47,8 @@ The project I am currently working on.<br/>
 It's first Triangle!<br/>
 While not the best motive it acts as a proof of concept of the underlying multithreaded structure to be working without crashing. (Graphics module for more complex rendering is still in the works)
 
+---
+
 <!--## [Unreal Engine 4](/pages/unreal_page)-->
 ## Unreal Engine 4
 Start of an RTS game with 2 (or more) Clients and a Server. The green/red spheres are debug indicator for the range of the units. The little 'hut's top left and bottom right are structures to spawn units from, own faction only. Units can fight and kill each other.<br/>
