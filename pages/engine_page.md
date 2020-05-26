@@ -203,4 +203,15 @@ bool Init() override
 	return false;
 }
 ```
-	
+---
+Syncing of data that may change every frame is done via a WorldstateHandler class that encompasses all syncing operations.<br/>
+To increase the speed of syncing, as only one thread can sync at a time, the amount of data that needs syncing is reduced as much as possible, also data is laid out in a way that allows for `memcpy()` to be used which is magnitudes faster than looping over objects.<br/>
+For example the graphics is only concerned with the transformations of objects (models and materials don't change) so it only has to call<br/>
+```c++
+void GetShaTransforms(std::vector<Transformation<T, dimension>>& out) const
+{
+	/*mutex*/const std::scoped_lock<std::mutex> lock(m_transform);
+	memcpy(out.data(), tra.data(), tra.size() * sizeof(Transformation<T,dimension>));
+}
+```
+before every frame, instead of copying over the entire object.
