@@ -174,7 +174,7 @@ int WINAPI wWinMain(HINSTANCE hInst, HINSTANCE, LPWSTR pArgs, INT)
 #endif
 ```
 While the core engine always stays the same, different (e.g. Graphic) modules can be chosen within the SetUp class, which handles initialisation for its given platform.
-WindowsSetUp.h's Init function
+WindowsSetUp's Init function
 ```c++
 bool Init() override
 {
