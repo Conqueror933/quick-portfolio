@@ -43,9 +43,9 @@ Also supports counting of right and wrong answers and will prompt questions at w
 
 ## [Engine](/pages/engine_page)
 The project I am currently working on.<br/>
-While it already reached a 'working' state big changes and refacturing leave it non-functioning at the moment,<br/>
-however here's a sneakpeak at some of the most interesting pieces.<br/>
-(code and explanation only)<br/>
+<img src="images/Engine_Single_Red_Triangle.png?raw=true"/><br/>
+It's first Triangle!<br/>
+While not the best motive it acts as a proof of concept of the underlying multithreaded structure to be working without crashing. (Graphics module for more complex rendering is still in the works)
 
 <!--## [Unreal Engine 4](/pages/unreal_page)-->
 ## Unreal Engine 4
