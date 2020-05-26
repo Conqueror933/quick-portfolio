@@ -176,17 +176,12 @@ int WINAPI wWinMain(HINSTANCE hInst, HINSTANCE, LPWSTR pArgs, INT)
 While the core engine always stays the same, different (e.g. Graphic) modules can be chosen within the SetUp class, which handles initialisation for its given platform.
 WindowsSetUp.h's Init function
 ```c++
-bool Init(std::string filename = "Config.txt") override
+bool Init() override
 	{
 		if (!Engine<T, dimension>::IsInitialized())
 		{
-			//std::ifstream input(filename);
-			//if (!input.is_open()) { return false; }
-			//Come up with some Magic to read the Graphics 'SubClass' from File
-
-
+			//todo Switch to smart pointers later
 			EngineSetUp<T, dimension> ESU;
-			//ESU.Graphics = new WindowsGraphics(hWnd);
 			ESU.Graphics = new WindowsGraphics(hWnd);
 			ESU.AI = new AI<T, dimension>();
 			ESU.Physics = new Physics<T, dimension>();
@@ -194,6 +189,7 @@ bool Init(std::string filename = "Config.txt") override
 			ESU.UserInput = new WindowsUserInput<T, dimension>(hWnd);
 			ESU.UserInterface = new UserInterface<T, dimension>();
 
+			//Engine either initialises correctly or we clean up the mess we made
 			if (Engine<T, dimension>::Init(ESU)) { return true; }
 			else {
 				delete ESU.Graphics;
