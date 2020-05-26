@@ -154,3 +154,57 @@ public:
 	T v;
 };
 ```
+---
+Main.cpp easily allows to change dimensioncount (2 in this case) and unit-model (float in this case) for predefined set-ups. It also makes changing the platform to build for easy, with preprocessor macros.
+```c++
+#ifdef _WIN32
+int WINAPI wWinMain(HINSTANCE hInst, HINSTANCE, LPWSTR pArgs, INT)
+{
+	bool rdy = false;
+	{
+		WindowsSetUp<float, 2> temp(hInst, pArgs);
+		rdy = temp.Init();
+	}
+	if (rdy)
+	{
+		Engine<float, 2>::Start();
+	}
+	return 0;
+}
+#endif
+```
+While the core engine always stays the same, different (e.g. Graphic) modules can be choosen within the SetUp class, which handles initialisation for its given platform.
+WindowsSetUp.h's Init function
+```c++
+bool Init(std::string filename = "Config.txt") override
+	{
+		if (!Engine<T, dimension>::IsInitialized())
+		{
+			//std::ifstream input(filename);
+			//if (!input.is_open()) { return false; }
+			//Come up with some Magic to read the Graphics 'SubClass' from File
+
+
+			EngineSetUp<T, dimension> ESU;
+			//ESU.Graphics = new WindowsGraphics(hWnd);
+			ESU.Graphics = new WindowsGraphics(hWnd);
+			ESU.AI = new AI<T, dimension>();
+			ESU.Physics = new Physics<T, dimension>();
+			ESU.Sound = new WindowsSound<T, dimension>();
+			ESU.UserInput = new WindowsUserInput<T, dimension>(hWnd);
+			ESU.UserInterface = new UserInterface<T, dimension>();
+
+			if (Engine<T, dimension>::Init(ESU)) { return true; }
+			else {
+				delete ESU.Graphics;
+				delete ESU.AI;
+				delete ESU.Physics;
+				delete ESU.Sound;
+				delete ESU.UserInput;
+				delete ESU.UserInterface;
+			}
+		}
+		return false;
+	}
+```
+	
