@@ -51,39 +51,10 @@ This project once finished will include:
 ---
 
 ### The Vector class making infinite dimensions possible
-Showing only the template class and the specialisation for 5 dimensions, the entire thing is 1000+ lines of code.<br/>
-Up to 5D we get nice x,y,z,w,v syntax while wasting no memory.<br/>
-For 6D+ we have to sacrifice the syntax and 6D will just be arr[0].<br/>
+Up to 5D we get the nice x,y,z,w,v syntax while wasting no memory and enabling interdimension compatibility.<br/>
+While for 6D+ we have to sacrifice the syntax, using arr[dimensions_over_6] instead, it ensures that all dimensions are supported.<br/>
+The specification for 5 dimensions: (shortened)<br/>
 ```c++
-template<typename T, size_t dimension> class Vector : Vector<T, 5>
-{
-public:
-	///BIG 3
-	Vector<T, dimension>() = default;
-	Vector<T, dimension>(T x, T y, T z, T w, T v, std::array<T, dimension - 5> arr) : Vector<T, 5>(x,y,z,w,v), arr(arr) {}
-	Vector<T, dimension>(std::array<T, dimension> arr) : Vector<T, 5>(arr[0], arr[1], arr[2], arr[3], arr[4]), arr({*(arr.data() + 5)}) {}
-	Vector<T, dimension>(Vector<T, 5> base, std::array<T, dimension - 5> arr) : Vector<T, 5>(base), arr(arr) {}
-	template<typename S>
-	explicit Vector<T, dimension>(const Vector<S, dimension>& rhs) : Vector<T, 5>(rhs)
-	{
-		for (size_t i = 0; i < arr.size(); i++) arr[i] = (T)rhs.arr[i];
-	}
-	Vector<T, dimension>(const Vector<T, dimension>& rhs) : Vector<T, 5>(rhs)
-	{
-		for (size_t i = 0; i < arr.size(); i++) arr[i] = rhs.arr[i];
-	}
-	Vector<T, dimension>& operator=(const Vector<T, dimension>& rhs)
-	{
-		for(size_t i = 0; i < arr.size(); i++)
-			arr[i] = rhs.arr[i];
-		Vector<T, 5>::operator=(rhs);
-		return *this;
-	}
-	~Vector<T, dimension>() = default;
-	//...
-	std::array<T, dimension - 5> arr;
-};
-
 template<typename T> class Vector<T, 5> : public Vector<T, 4>
 {
 public:
@@ -124,69 +95,8 @@ public:
 		v += rhs;
 		return *this;
 	}
-	// -
-	inline Vector<T, 5> operator-(const Vector<T, 5>& rhs) const
-	{
-		return Vector<T, 5>{Vector<T, 4>::operator-(rhs), v - rhs.v};
-	}
-	inline Vector<T, 5>& operator-=(const Vector<T, 5>& rhs)
-	{
-		Vector<T, 4>::operator-=(rhs);
-		v -= rhs.v;
-		return *this;
-	}
-	inline Vector<T, 5> operator-(const T& rhs) const
-	{
-		return Vector<T, 5>{Vector<T, 4>::operator-(rhs), v - rhs};
-	}
-	inline Vector<T, 5>& operator-=(const T& rhs)
-	{
-		Vector<T, 4>::operator-=(rhs);
-		v -= rhs;
-		return *this;
-	}
-	// *
-	inline Vector<T, 5> operator*(const Vector<T, 5>& rhs) const
-	{
-		return Vector<T, 5>{Vector<T, 4>::operator*(rhs), v * rhs.v};
-	}
-	inline Vector<T, 5>& operator*=(const Vector<T, 5>& rhs)
-	{
-		Vector<T, 4>::operator*=(rhs);
-		v *= rhs.v;
-		return *this;
-	}
-	inline Vector<T, 5> operator*(const T& rhs) const
-	{
-		return Vector<T, 5>{Vector<T, 4>::operator*(rhs), v * rhs};
-	}
-	inline Vector<T, 5>& operator*=(const T& rhs)
-	{
-		Vector<T, 4>::operator*=(rhs);
-		v *= rhs;
-		return *this;
-	}
-	// /
-	inline Vector<T, 5> operator/(const Vector<T, 5>& rhs) const
-	{
-		return Vector<T, 5>{Vector<T, 4>::operator/(rhs), v / rhs.v};
-	}
-	inline Vector<T, 5>& operator/=(const Vector<T, 5>& rhs)
-	{
-		Vector<T, 4>::operator/=(rhs);
-		v /= rhs.v;
-		return *this;
-	}
-	inline Vector<T, 5> operator/(const T& rhs) const
-	{
-		return Vector<T, 5>{Vector<T, 4>::operator/(rhs), v / rhs};
-	}
-	inline Vector<T, 5>& operator/=(const T& rhs)
-	{
-		Vector<T, 4>::operator/=(rhs);
-		v /= rhs;
-		return *this;
-	}
+	// ... -,*,/ are all the same ...
+	
 	/// comparison
 	inline bool operator==(const Vector<T, 5>& rhs) const
 	{
