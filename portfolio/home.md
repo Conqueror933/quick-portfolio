@@ -1,4 +1,4 @@
-# [C++](/pages/portfolio/cpp)
-# [General Programmer](/pages/portfolio/programming)
-# [Game Designer](/pages/portfolio/game_design)
-# [Personal](/pages/portfolio/personal)
+# [C++](/portfolio/cpp/home)
+# [General Programmer](/portfolio/programming/home)
+# [Game Designer](/portfolio/game_design/home)
+# [Personal](/portfolio/personal/home)
