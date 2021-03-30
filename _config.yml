@@ -1,13 +1,13 @@
 title: Rene Goldmann # your name (or website title) here
 logo: "/gm_symbol.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  Software/Game Developer
+  Software Developer, Game Designer, Philosoph, Mad Genius, Wizard
   <br>
-  Never assume, try it, test it, break it.
+  "Catch Phrase"
   <br><br>
   Contact email: Rene.Goldmann@rub.de
   <br><br>
-  <a href="https://conqueror933.github.io/">Home</a>
+  <a href="https://conqueror933.github.io/portfolio">Home</a>
   
 theme: jekyll-theme-hacker
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
