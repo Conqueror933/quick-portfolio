@@ -7,11 +7,11 @@ Work in progress.
 ## [I would like to only see what is relevant to me.](/portfolio/guide/who_are_you)<br/>
 <br/><br/>
 ## I don't have time for games, I'll find it myself.<br/>
-[Portfolio](/portfolio/home)<br/>
-[Design](/portfolio/design/home)<br/>
-	[Game design](/portfolio/design/game_design/home)<br/>
-	[placeholder](/portfolio/)<br/>
-	[placeholder](/portfolio/)<br/>
+*  [Portfolio](/portfolio/home)<br/>
+*  [Design](/portfolio/design/home)<br/>
+	*  [Game design](/portfolio/design/game_design/home)<br/>
+	*  [placeholder](/portfolio/)<br/>
+	*  [placeholder](/portfolio/)<br/>
 [Technical](/portfolio/programming/home)<br/>
 	[Cpp](/portfolio/programming/cpp/home)<br/>
 		[Arcade](/portfolio/programming/cpp/arcade/home)<br/>
