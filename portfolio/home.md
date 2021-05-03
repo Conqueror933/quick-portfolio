@@ -13,7 +13,7 @@ Work in progress.
 	*  [placeholder](/portfolio/)<br/>
 	*  [placeholder](/portfolio/)<br/>
 *  [Technical](/portfolio/programming/home)<br/>
-	*  [Cpp](/portfolio/programming/cpp/home)<br/>
+	*  [C++](/portfolio/programming/cpp/home)<br/>
 		*  [Arcade](/portfolio/programming/cpp/arcade/home)<br/>
 			*  [Kaesekaestchen](/portfolio/programming/cpp/arcade/kaesekaestchen)<br/>
 			*  [Menu](/portfolio/programming/cpp/arcade/menu)<br/>
