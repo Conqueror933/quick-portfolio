@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\portfolio",
-    "\\portfolio\\design",
     "\\portfolio\\design\\game_design",
     "\\portfolio\\guide",
-    "\\portfolio\\programming",
+    "\\portfolio\\programming\\cpp",
+    "\\portfolio\\programming\\cpp\\arcade",
     "\\portfolio\\programming\\modding",
-    "\\portfolio\\programming\\modding\\rimworld",
-    "\\portfolio\\soft_skills"
+    "\\portfolio\\programming\\modding\\rimworld"
   ],
-  "SelectedNode": "\\index.md",
+  "SelectedNode": "\\portfolio\\guide\\random_dude.md",
   "PreviewInSolutionExplorer": false
 }

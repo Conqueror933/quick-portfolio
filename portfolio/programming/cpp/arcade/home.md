@@ -5,9 +5,9 @@ I consider it legacy by now as there are a ton of bad design decisions in the co
 
 ## Willkommen zur Arcade
 Welcomes you in german.
-## [Kaesekaestchen](/pages/kaesekaestchen_page)
+## [Kaesekaestchen](/portfolio/programming/cpp/arcade/kaesekaestchen_page)
 The original project that evolved into the Arcade.
-## [Snake](/pages/snake_page)
+## [Snake](/portfolio/programming/cpp/arcade/snake_page)
 It's the game Snake.
 ## Pong (under construction)
 Teaching a friend of mine who's studying computer engineering at university how to c++.
@@ -17,7 +17,7 @@ A cardgame idea that should it ever get finished will be made in my Engine inste
 End button.
 ## DevMode
 Only exists in the debug-build, serves as a platform to test things.
-## [Menu](/pages/menu_page)
+## [Menu](/portfolio/programming/cpp/arcade/menu_page)
 Despite being in plain sight, a somewhat hidden part you often don't think about.<br/>
 <br/>
 ---

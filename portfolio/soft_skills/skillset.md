@@ -8,11 +8,11 @@
 - Pointer magic
 	- Pointer arithmetics, Ownership-management with pointers [example](#Pointer)
 - Templates
-	- from using them to making them [example](/pages/engine_page)
+	- from using them to making them [example](/portfolio/programming/engine)
 - Run & Compile -time polymorphism
 	- everything from dynamic dispatch, virtual function tables to template meta programming
 - Design Patterns
-	- from Singleton and Update Patterns to Data locality and Object Pools [example](/pages/arcade_page)
+	- from Singleton and Update Patterns to Data locality and Object Pools [example](/portfolio/programming/cpp/arcade/home)
 - Data Structures
 	- everything about O(n) and when to ignore it
 - Algorithms
@@ -93,7 +93,7 @@ union DataPass
 ```
 
 #### <a name="Pointer"></a> Pointer
-`AddObjects()` function of the `World` in my [Engine](/pages/engine_page) project that takes in unique_ptr's of Objects to add them to the tripple buffering for the asynchronous multithreading. I found a better way of doing this later, but I still think it shows the 'Pointer magic' pretty well.<br/>
+`AddObjects()` function of the `World` in my [Engine](/portfolio/programming/cpp/engine) project that takes in unique_ptr's of Objects to add them to the tripple buffering for the asynchronous multithreading. I found a better way of doing this later, but I still think it shows the 'Pointer magic' pretty well.<br/>
 
 ```c++
 void WorldstateHandler::AddObjects()

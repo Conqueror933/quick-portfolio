@@ -2,6 +2,8 @@
 <!--# [General Programmer](/portfolio/programming/home)-->
 <!--# [Game Designer](/portfolio/game_design/home)-->
 <!--# [Personal](/portfolio/personal/home)-->
+# [Old Portfolio](/portfolio/programming/cpp/home)
+<br/><br/><br/><br/><br/>
 Work in progress.
 
 ## [I would like to only see what is relevant to me.](/portfolio/guide/who_are_you)<br/>

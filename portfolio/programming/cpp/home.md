@@ -1,6 +1,6 @@
 # [Portfolio](/portfolio/home)
 ---
-Skillset Overview: ([In-depth and Soft-Skills](/pages/skillset_page)) <br/>
+Skillset Overview: ([In-depth and Soft-Skills](/portfolio/soft_skills/skillset)) <br/>
 - Syntax + Basics of C++
 - everything std:: 00/11/14/17/20
 - Unions
@@ -27,7 +27,7 @@ Skillset Overview: ([In-depth and Soft-Skills](/pages/skillset_page)) <br/>
 
 ---
 
-## [Arcade](/pages/arcade_page)
+## [Arcade](/portfolio/programming/cpp/arcade/home)
 My biggest completed project so far.<br/>
 <img src="images/ArcadeMainMenu.png?raw=true"/><br/>
 
@@ -41,7 +41,7 @@ Also supports counting of right and wrong answers and will prompt questions at w
 
 ---
 
-## [Engine](/pages/engine_page)
+## [Engine](/portfolio/programming/cpp/engine)
 The project I am currently working on.<br/>
 <img src="images/Engine_Single_Red_Triangle.png?raw=true"/><br/>
 It's first Triangle!<br/>

@@ -50,7 +50,7 @@ One more click brings you back to the menu so you can play again!<br/>
 
 ---
 ## Technical Explanation
-For an explanation on how the menu works click [here](/pages/menu_page).<br/>
+For an explanation on how the menu works click [here](/portfolio/programming/cpp/arcade/menu).<br/>
 <br/>
 ### Highlights
 Board.cpp - the mother class for all Kaesekaestchen game modes.<br/>
