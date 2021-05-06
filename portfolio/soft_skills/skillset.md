@@ -8,7 +8,7 @@
 - Pointer magic
 	- Pointer arithmetics, Ownership-management with pointers [example](#Pointer)
 - Templates
-	- from using them to making them [example](/portfolio/programming/engine)
+	- from using them to making them [example](/portfolio/programming/cpp/engine)
 - Run & Compile -time polymorphism
 	- everything from dynamic dispatch, virtual function tables to template meta programming
 - Design Patterns
